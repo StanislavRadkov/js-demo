@@ -11,7 +11,6 @@ $('document').ready(() => {
     $('#calculate').click(() => {
         $('#result').text('Working');
         doNothingSlowly(2000);
-        
     });
 });
 
@@ -19,7 +18,7 @@ $('document').ready(() => {
     $('#webworker').click(() => {
         var myWorker = new Worker('web-worker.js');
         $('#result').text('Working');
-        
+
         myWorker.onmessage = function(e) {
             $('#result').text(e.data);
         }
