@@ -10,7 +10,6 @@ $('document').ready(() => {
         for (var i = 0; i < count; i++) {
             arr[i] = $('<span class="badge badge-primary">ELEMENT</span>')[0];
             $('#holder').append(arr[i]);
-
         }
 
         for (var i = 0; i < count; i++) {
@@ -28,7 +27,6 @@ $('document').ready(() => {
         for (var i = 0; i < count; i++) {
             map[i] = $('<span class="badge badge-primary">ELEMENT</span>')[0];
             $('#holder').append(map[i]);
-            map[i].remove();
         }
         
         for (var i = 0; i < count; i++) {
