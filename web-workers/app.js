@@ -11,6 +11,7 @@ $('document').ready(() => {
     $('#calculate').click(() => {
         $('#result').text('Working');
         doNothingSlowly(2000);
+        $('#result').text('Done');
     });
 });
 

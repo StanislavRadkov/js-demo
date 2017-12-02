@@ -11,8 +11,7 @@ var promise2 = new Promise(function(resolve, reject) {
     setTimeout(() => reject('Failed'), 5000);
  });
 
- promise2
- .catch((result) => console.log(result));
+ promise2.catch((result) => console.log(result));
 
  // Wait multiple promises
  Promise.all([promise1, promise2])

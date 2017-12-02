@@ -1,4 +1,4 @@
-// Iterators
+// Iterators  - TODO - change demo
 let fibonacci = {
     [Symbol.iterator]() {
         let pre = 0, cur = 1

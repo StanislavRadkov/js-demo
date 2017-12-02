@@ -1,7 +1,7 @@
 // Set
 let set = new Set();
 set.add("hello").add("goodbye").add("hello");
-set.has("hello") === true;
+console.log(set.has("hello")); 
 for (let key of set.values()) // insertion order
     console.log(key);
 

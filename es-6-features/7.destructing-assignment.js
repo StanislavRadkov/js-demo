@@ -1,7 +1,9 @@
 // Array Matching
 var list = [ 1, 2, 3 ];
-var [ a, , b ] = list;
+var [ a, ,b ] = list;
+var [ z, ...k ] = list;
 console.log(`A: ${a}, B: ${b}`);
+console.log(`Z: ${z}, K: ${k}`);
 
 // Object matching
 var obj = {
@@ -26,4 +28,10 @@ console.log(f);
 var {a , j = 3} = obj;
 console.log(`a: ${a}, j: ${j}`);
 
-// http://es6-features.org/#ParameterContextMatching
+// Parameter Context Matching
+function greet([ firstName, secondName ]) {
+    console.log(`Hello, ${firstName} ${secondName}!`);
+}
+
+var args = ['Jon', 'Snow'];
+greet(args)

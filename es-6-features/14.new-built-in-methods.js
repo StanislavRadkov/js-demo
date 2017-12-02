@@ -31,3 +31,6 @@ console.log(Number.isSafeInteger(9007199254740992));
 // Availability of a standard Epsilon value for more precise comparison of floating point numbers.
 console.log(0.1 + 0.2 === 0.3)
 console.log(Math.abs((0.1 + 0.2) - 0.3) < Number.EPSILON)
+
+// exponentiation (**) operator
+console.log(2 ** 3);

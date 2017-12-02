@@ -10,8 +10,8 @@ $('document').ready(() => {
         for (var i = 0; i < count; i++) {
             var elem = $('<span class="badge badge-primary">ELEMENT</span>');
             arr[i] = elem;
-            $('#holder').append(elem);
-            elem.remove();
+            // $('#holder').append(elem);
+            // elem.remove();
         }
 
         console.log('USING ARRAY: DONE!');        
