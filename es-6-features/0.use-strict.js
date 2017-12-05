@@ -1,5 +1,6 @@
 'use strict'; // function or global scope
- a = 5; // 'a' is not declared
+ var variable = 5;
+ variablle = 3
 
 var x = 3; 
 delete x;
