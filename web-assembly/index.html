@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        fetch('a.out.wasm') // Fetch the binary
+            .then(response => response.arrayBuffer())
+            .then(buffer => WebAssembly.compile(buffer)) // Get a Module from the buffer
+            .then(module => {
+              // Get an Instance of the Module
+              const instance = new WebAssembly.Instance(module, { env: { memory: () => WebAssembly.Memory}});
+              document.getElementById("btn").addEventListener("click", function() {
+                      alert("Result is : " + instance.exports.hi());
+                  }, false);
+            });    
+    </script>
+</head>
+
+<body>
+
+</body>

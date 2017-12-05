@@ -1,4 +1,6 @@
 // Classes
+'use strict';
+
 class Shape {
     static getStaticValue() {
         return 42;
@@ -47,5 +49,4 @@ var r = new Rectangle(50, 20)
 r.area === 1000
 console.log(r.area)
 
-r.area = 10; // No error
-console.log(r.area)
+r.area = 10; //Error (because of strict mode)
