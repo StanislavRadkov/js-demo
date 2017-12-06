@@ -1,5 +1,5 @@
 // Array Matching
-var list = [ 1, 2, 3 ];
+var list = [ 1, 2, 3, 4 ];
 var [ a, ,b ] = list;
 var [ z, ...k ] = list;
 console.log(`A: ${a}, B: ${b}`);
